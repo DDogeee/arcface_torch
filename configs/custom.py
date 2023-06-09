@@ -20,8 +20,8 @@ config.verbose = 2000
 config.dali = False
 
 config.rec = "dataset"
-config.num_classes = 2000
-config.num_image = 144000
+config.num_classes = 7949
+config.num_image = 126266
 config.num_epoch = 20
 config.warmup_epoch = 0
 config.val_targets = ['lfw', 'cfp_fp', "agedb_30"]
