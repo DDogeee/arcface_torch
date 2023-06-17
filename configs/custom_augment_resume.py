@@ -7,7 +7,7 @@ from easydict import EasyDict as edict
 config = edict()
 config.margin_list = (1.0, 0.5, 0.0)
 config.network = "r50"
-config.resume = False
+config.resume = True
 config.output = "work_dirs/custom_augment"
 config.embedding_size = 512
 config.sample_rate = 1.0
