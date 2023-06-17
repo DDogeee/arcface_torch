@@ -19,7 +19,7 @@ config.lr = 0.02
 config.verbose = 2000
 config.dali = False
 
-config.rec = "/kaggle/input/celaba"
+config.rec = "/kaggle/input/celeba"
 config.num_classes = 995
 config.num_image = 105248
 config.num_epoch = 5
