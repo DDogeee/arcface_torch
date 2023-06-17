@@ -145,15 +145,16 @@ def main(args):
     start_epoch = 0
     global_step = 0
     if cfg.resume:
-        dict_checkpoint = torch.load(os.path.join(cfg.output, f"checkpoint_gpu_{rank}.pt"))
-        start_epoch = dict_checkpoint["epoch"]
-        global_step = dict_checkpoint["global_step"]
-        backbone.module.load_state_dict(dict_checkpoint["state_dict_backbone"])
-        module_partial_fc.load_state_dict(dict_checkpoint["state_dict_softmax_fc"])
-        opt.load_state_dict(dict_checkpoint["state_optimizer"])
-        lr_scheduler.load_state_dict(dict_checkpoint["state_lr_scheduler"])
-        del dict_checkpoint
-
+        # dict_checkpoint = torch.load(os.path.join(cfg.output, f"checkpoint_gpu_{rank}.pt"))
+        # start_epoch = dict_checkpoint["epoch"]
+        # global_step = dict_checkpoint["global_step"]
+        # backbone.module.load_state_dict(dict_checkpoint["state_dict_backbone"])
+        # module_partial_fc.load_state_dict(dict_checkpoint["state_dict_softmax_fc"])
+        # opt.load_state_dict(dict_checkpoint["state_optimizer"])
+        # lr_scheduler.load_state_dict(dict_checkpoint["state_lr_scheduler"])
+        # del dict_checkpoint
+        backbone.module.load_state_dict(torch.load(os.path.join(cfg.output, "backbone.pt")))
+        
     for key, value in cfg.items():
         num_space = 25 - len(key)
         logging.info(": " + key + " " * num_space + str(value))
