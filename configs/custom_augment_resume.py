@@ -22,6 +22,6 @@ config.dali = False
 config.rec = "/kaggle/input/celaba"
 config.num_classes = 995
 config.num_image = 105248
-config.num_epoch = 3
+config.num_epoch = 2
 config.warmup_epoch = 0
 config.val_targets = ['lfw', 'cfp_fp', "agedb_30"]
