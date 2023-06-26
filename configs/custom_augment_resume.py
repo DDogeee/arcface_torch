@@ -19,7 +19,7 @@ config.lr = 0.02
 config.verbose = 2000
 config.dali = False
 
-config.rec = "/kaggle/input/dataset"
+config.rec = "/kaggle/working/arcface_torch/dataset"
 config.num_classes = 9177
 config.num_image = 181447
 config.num_epoch = 20
