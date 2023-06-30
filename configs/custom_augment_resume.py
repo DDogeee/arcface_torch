@@ -22,6 +22,6 @@ config.dali = False
 config.rec = "/kaggle/working/arcface_torch/dataset"
 config.num_classes = 9177
 config.num_image = 181447
-config.num_epoch = 5
+config.num_epoch = 3
 config.warmup_epoch = 0
 config.val_targets = ['lfw', 'cfp_fp', "agedb_30"]
