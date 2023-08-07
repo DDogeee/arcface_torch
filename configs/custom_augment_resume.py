@@ -19,9 +19,9 @@ config.lr = 0.02
 config.verbose = 2000
 config.dali = False
 
-config.rec = "/kaggle/working/arcface_torch/dataset"
+config.rec = "/kaggle/input/celeba"
 config.num_classes = 9177
 config.num_image = 181447
-config.num_epoch = 3
+config.num_epoch = 2
 config.warmup_epoch = 0
 config.val_targets = ['lfw', 'cfp_fp', "agedb_30"]
